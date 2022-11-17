@@ -1,22 +1,23 @@
+/* eslint-disable no-unused-vars */
+
 import './App.css';
 import React from 'react';
 import Navbar from './Navbar';
 import Firstbook from './pages/Firstbook';
 import Cats from './pages/Cats';
-import {Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-    <Navbar />
+      <Navbar />
 
-   <div className="App">
-    <Routes>
-      <Route path="/categories" element={<Cats/>} />
-      <Route path="/" element={<Firstbook/>} />
-      </Routes>
-
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/categories" element={<Cats />} />
+          <Route path="/" element={<Firstbook />} />
+        </Routes>
+      </div>
     </>
   );
 }
