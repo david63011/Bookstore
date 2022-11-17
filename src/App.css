@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: stretch;
+  padding: 0 20px;
+  background-color: #333;
+  height: 60px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.addbook {
+  color: #888;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+form input {
+  box-shadow: 10px 10px 27px -159px rgba(0, 0, 0, 0.75);
+  margin: 1rem;
+  padding: 0.7rem;
+}
+
+.bookbtn {
+  background-color: #0290ff;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.cats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbtn {
+  background-color: #0290ff;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+
+.book-btn {
+  color: #4386bf;
+  margin: 1rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.book-info {
+  border: 1px solid rgb(197, 186, 186);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+}
+
+.genre {
+  color: grey;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.booktitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.bookauthor {
+  color: #4386bf;
+  font-size: 0.8rem;
+}
+
+.progress {
+  display: flex;
+}
