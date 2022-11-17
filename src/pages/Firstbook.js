@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import React from 'react';
 import Books from '../component/Books';
 import Bookform from '../component/Bookform';
@@ -8,7 +10,7 @@ const Firstbook = () => {
       <Books title="Money Ball" author="Michael Lewis" />
       <Books title="The Alchemist" author="Paulo Coelho" />
       <Books title="The Power of Habit" author="Charles Duhigg" />
-      s <Bookform />
+      <Bookform />
     </div>
   );
 };
