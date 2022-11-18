@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable arrow-body-style */
-
 import React from 'react';
 
 const Cats = () => {
