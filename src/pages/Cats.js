@@ -1,6 +1,8 @@
 const Cats = () => (
   <div className="cats">
-    <button className="checkbtn">Check Status</button>
+    <button type="submit" className="checkbtn">
+      Check Status
+    </button>
   </div>
 );
 

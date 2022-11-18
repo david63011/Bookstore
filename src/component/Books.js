@@ -1,13 +1,11 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable arrow-body-style */
 
 import React from 'react';
+import PropTypes from 'prop-types'
 
 const Books = ({ title, author }) => {
   return (
     <div className="bookSite">
       <div className="book-info">
-        <div className="bookinfocon"></div>
         <ul>
           <li className="genre books">Action</li>
           <div>
@@ -38,5 +36,11 @@ const Books = ({ title, author }) => {
     </div>
   );
 };
+
+Books.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired
+}
+
 
 export default Books;
