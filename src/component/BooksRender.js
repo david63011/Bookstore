@@ -38,8 +38,6 @@ const Books = ({ id, title, author }) => (
 Books.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  completed: PropTypes.bool.isRequired,
-  chapter: PropTypes.number.isRequired,
   id: PropTypes.number.isRequired,
 };
 

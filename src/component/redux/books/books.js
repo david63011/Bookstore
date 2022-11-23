@@ -1,9 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { BookList } from '../BookList';
-
 export const bookSlice = createSlice({
   name: 'books',
-  initialState: { value: BookList },
+  initialState: { value: [] },
   reducers: {
     bookReducers: (state, action) => {
       state.value.push(action.payload);
