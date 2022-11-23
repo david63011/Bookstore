@@ -12,7 +12,7 @@ export const BookList = [
   {
     id: 2,
     title: 'Dune',
-    author: 'Frank Herberts',
+    author: 'Frank Herbert',
     completed: '12%',
     chapter: '2',
   },

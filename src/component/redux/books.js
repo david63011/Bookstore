@@ -1,3 +1,4 @@
+/* eslint-enable no-param-reassign*/
 import { createSlice } from '@reduxjs/toolkit';
 import { BookList } from '../BookList';
 
