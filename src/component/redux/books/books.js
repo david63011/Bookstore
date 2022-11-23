@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 const ADD_BOOK = 'books/src/redux/books/addbook';
 const REMOVE_BOOK = 'books/src/redux/books/removebook';
 
@@ -29,4 +28,5 @@ const initialState = (state = '', action) => {
   }
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default { addbook, removebook, initialState };
