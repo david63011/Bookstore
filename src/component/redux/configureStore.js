@@ -1,10 +1,10 @@
-/* eslint-disable no-undef */
-/* eslint-disable  import/prefer-default-export */
-
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import { initialState } from './books/books';
 
 const rootReducer = combineReducers({
-  books: booksReducer,
+  books: initialState,
 });
 
-export const store = configureStore({ reducer: rootReducer });
+const store = configureStore({ reducer: rootReducer });
+
+export default store;
