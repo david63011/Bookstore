@@ -1,7 +1,7 @@
 const ADD_BOOK = 'books/src/redux/books/addbook';
 const REMOVE_BOOK = 'books/src/redux/books/removebook';
 
-const addbook = () => ({
+export const addbook = () => ({
   type: 'ADD_BOOK',
   payload: {
     id: Math.floor(Math.random() * 10000),
@@ -12,7 +12,7 @@ const addbook = () => ({
   },
 });
 
-const removebook = (id) => ({
+export const removebook = (id) => ({
   type: 'REMOVE_BOOK',
   payload: id,
 });
@@ -28,5 +28,4 @@ const initialState = (state = '', action) => {
   }
 };
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default { addbook, removebook, initialState };
+export default initialState;
