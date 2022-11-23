@@ -1,4 +1,5 @@
 /*eslint-disable import/prefer-default-export*/
+/* eslint-disable spaced-comment */
 export const BookList = [
   {
     id: 1,
