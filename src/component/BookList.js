@@ -1,5 +1,6 @@
 /*eslint-disable import/prefer-default-export*/
 /* eslint-disable spaced-comment */
+
 export const BookList = [
   {
     id: 1,
@@ -11,7 +12,7 @@ export const BookList = [
   {
     id: 2,
     title: 'Dune',
-    author: 'Frank Herberts',
+    author: 'Frank Herbert',
     completed: '12%',
     chapter: '2',
   },
