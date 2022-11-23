@@ -8,8 +8,8 @@ export const bookSlice = createSlice({
     bookReducers: (state, action) => {
       state.value.push(action.payload);
     },
-    removeBook: (state, action) => {
-      state.value = state.value.filter((book) => book.id !== action.payload);
+    //removeBook: (state, action) => {
+      //state.value = state.value.filter((book) => book.id !== action.payload);
     },
   },
 });
