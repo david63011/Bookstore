@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RemoveBooks from './Removebook';
 
-const Books = ({ id, title, author, completed, chapter }) => (
+const Books = ({ id, title, author }) => (
   <div className="bookSite">
     <div className="book-info">
       <ul>
