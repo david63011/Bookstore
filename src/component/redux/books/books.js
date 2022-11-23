@@ -2,7 +2,7 @@
 const ADD_BOOK = 'books/src/redux/books/addbook';
 const REMOVE_BOOK = 'books/src/redux/books/removebook';
 
-//action to add
+// action to add
 
 const addbook = () => ({
   type: 'ADD_BOOK',
@@ -15,13 +15,13 @@ const addbook = () => ({
   },
 });
 
-//action to remove
+// action to remove
 const removebook = (id) => ({
   type: 'REMOVE_BOOK',
   payload: id,
 });
 
-//create reducer
+// create reducer
 const initialState = (state = '', action) => {
   switch (action.type) {
     case ADD_BOOK:
