@@ -11,7 +11,6 @@ export const addbook = () => ({
     chapter: 1,
   },
 });
-s;
 
 export const removebook = (id) => ({
   type: 'REMOVE_BOOK',
