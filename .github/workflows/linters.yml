@@ -9,9 +9,6 @@ jobs:
   eslint:
     name: ESLint
     runs-on: ubuntu-22.04
-    "rules": {
-  "no-param-reassign": 0
-}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
