@@ -1,3 +1,5 @@
+/* eslint-disable spaced-comment*/
+
 const ADD_BOOK = 'books/src/redux/books/addbook';
 const REMOVE_BOOK = 'books/src/redux/books/removebook';
 
