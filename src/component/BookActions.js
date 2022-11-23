@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { bookReducers } from './redux/books';
@@ -37,7 +39,6 @@ const BookActions = () => {
             })
           );
         }}
-        s
         className="bookbtn"
         type="submit"
       >
