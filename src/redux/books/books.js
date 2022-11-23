@@ -1,6 +1,4 @@
-/* eslint-disable import/no-anonymous-default-export */
-const ADD_BOOK = 'books/src/redux/books/addbook';
-const REMOVE_BOOK = 'books/src/redux/books/removebook';
+const initialState = [];
 
 //action to add
 
@@ -22,15 +20,15 @@ const removebook = (id) => ({
 });
 
 //create reducer
-const initialState = (state = '', action) => {
+const bookReducers = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_BOOK:
+    case 'ADD_BOOK':
       return [...state, action.payload];
-    case REMOVE_BOOK:
+    case 'REMOVE_BOOK':
       return state.filter((book) => book.id !== action.payload);
     default:
       return state;
   }
 };
 
-export default { addbook, removebook, initialState };
+export default { addbook, removebook, bookReducers };

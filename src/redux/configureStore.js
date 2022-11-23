@@ -1,3 +1,5 @@
+/* eslint-disable import/no-named-as-default */
+
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import bookReducers from './books';
 
