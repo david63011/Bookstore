@@ -30,8 +30,8 @@ const BookActions = () => {
           dispatch(
             bookReducers({
               id: Math.floor(Math.random() * 10000),
-              title: title,
-              author: author,
+              title,
+              author,
               compleated: false,
               chapter: 1,
             })

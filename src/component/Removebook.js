@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeBook } from './redux/books';
 
-export const RemoveBooks = (id) => {
+const RemoveBooks = (id) => {
   const dispatch = useDispatch();
   const newID = id;
   const finalID = newID.id;
@@ -18,3 +18,5 @@ export const RemoveBooks = (id) => {
     </button>
   );
 };
+
+export default RemoveBooks;

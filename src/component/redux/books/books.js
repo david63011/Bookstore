@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { BookList } from '../BookList';
+import { bookList } from '../BookList';
 
 export const bookSlice = createSlice({
   name: 'books',
