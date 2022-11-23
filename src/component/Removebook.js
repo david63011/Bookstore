@@ -1,6 +1,6 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../component/Removebook';
 
 const RemoveBooks = (id) => {
   const dispatch = useDispatch();
