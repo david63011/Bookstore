@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { initialState } from './books/books';
+import initialState from './books/books';
 
 const rootReducer = combineReducers({
   books: initialState,
