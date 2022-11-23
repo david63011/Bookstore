@@ -1,4 +1,4 @@
-export const BookList = [
+const BookList = [
   {
     id: 1,
     title: 'Money Ball',
@@ -21,3 +21,5 @@ export const BookList = [
     chapter: '3',
   },
 ];
+
+export default BookList;
