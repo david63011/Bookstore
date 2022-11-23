@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { RemoveBooks } from './Removebook';
 
-const Books = ({ title, author }) => (
+export const Books = ({ id, title, author, completed, chapter }) => (
   <div className="bookSite">
     <div className="book-info">
       <ul>
@@ -16,9 +17,9 @@ const Books = ({ title, author }) => (
         <button className="book-btn" type="button">
           Comments
         </button>
-        <button className="book-btn" type="button">
-          Remove
-        </button>
+        <span>|</span>
+        <RemoveBooks id={id} />
+        <span>|</span>
         <button className="book-btn" type="button">
           Edit
         </button>
@@ -37,6 +38,7 @@ const Books = ({ title, author }) => (
 Books.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  completed: PropTypes.bool.isRequired,
+  chapter: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
 };
-
-export default Books;

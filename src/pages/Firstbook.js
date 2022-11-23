@@ -1,17 +1,23 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable arrow-body-style */
-
 import React from 'react';
-import Books from '../component/Books';
-import Bookform from '../component/Bookform';
+import { Books } from '../component/BooksRender';
+import BookActions from '../component/BookActions';
+import { useSelector } from 'react-redux';
 
 const Firstbook = () => {
+  const bookList = useSelector((state) => state.books.value);
   return (
-    <div>
-      <Books title="Money Ball" author="Michael Lewis" />
-      <Books title="The Alchemist" author="Paulo Coelho" />
-      <Books title="The Power of Habit" author="Charles Duhigg" />
-      <Bookform />
+    <div className="book-list">
+      {bookList.map((book) => (
+        <Books
+          key={book.id}
+          id={book.id}
+          title={book.title}
+          author={book.author}
+          completed={book.completed}
+          chapter={book.chapter}
+        />
+      ))}
+      <BookActions />
     </div>
   );
 };
