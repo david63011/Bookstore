@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { addBook } from '../redux/books/books';
+import { addBook, fetchBooks } from '../redux/Books/Books';
 
 const BookActions = () => {
   const [title, setTitle] = useState('');
@@ -15,6 +15,9 @@ const BookActions = () => {
         placeholder="Book Title"
         onChange={(event) => {
           setTitle(event.target.value);
+          setTimeout(() => {
+            dispatch(fetchBooks());
+          }, 500);
         }}
       />
       <input
@@ -22,6 +25,9 @@ const BookActions = () => {
         placeholder="Author"
         onChange={(event) => {
           setAuthor(event.target.value);
+          setTimeout(() => {
+            dispatch(fetchBooks());
+          }, 50);
         }}
       />
       <button

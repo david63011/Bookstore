@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBook, fetchBooks } from '../redux/Books/Books';
 
 const RemoveBooks = (id) => {
   const dispatch = useDispatch();
@@ -10,6 +10,9 @@ const RemoveBooks = (id) => {
     <button
       onClick={() => {
         dispatch(removeBook(id));
+        setTimeout(() => {
+          dispatch(fetchBooks());
+        }, 500);
       }}
       className="book-btn"
       type="button"

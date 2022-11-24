@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { checkStatus } from '../redux/categories/categories';
+import { checkStatus } from '../redux/Categories/Categories';
 
 const Cats = () => {
   const cat = useSelector((state) => state.categorie);
