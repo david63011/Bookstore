@@ -61,11 +61,10 @@ form input {
   cursor: pointer;
 }
 
-.stat-container{
+.stat-container {
   display: flex;
-  
-  }
-  
+}
+
 .cat-btn {
   background-color: #0290ff;
   width: 11.5rem;
@@ -78,7 +77,6 @@ form input {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  
 }
 
 .books {
