@@ -1,6 +1,7 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/Books/Books';
 
 const RemoveBooks = (id) => {
   const dispatch = useDispatch();
@@ -9,12 +10,12 @@ const RemoveBooks = (id) => {
   return (
     <button
       onClick={() => {
-        dispatch(removeBook(finalID));
+        dispatch(removeBook(id));
       }}
       className="book-btn"
-      type="submit"
+      type="button"
     >
-      Remove Book
+      Remove
     </button>
   );
 };

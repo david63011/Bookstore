@@ -1,12 +1,12 @@
-import { useSelector } from 'react-redux';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Books from '../component/BooksRender';
+import BookActions from '../component/BookActions';
 
 const Firstbook = () => {
-  const bookList = useSelector((state) => state.books.value);
   return (
-    <div className="book-list">
-      {bookList.map((book) => (
+    <div className="book-container">
+      {useSelector((state) => state.books).map((book) => (
         <Books
           key={book.id}
           id={book.id}
@@ -16,6 +16,7 @@ const Firstbook = () => {
           chapter={book.chapter}
         />
       ))}
+      <BookActions />
     </div>
   );
 };

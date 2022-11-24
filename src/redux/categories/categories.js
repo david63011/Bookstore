@@ -1,12 +1,14 @@
-const CHECK_STATUS = '/books/src/redux/checkStatus';
+const CHECK_STATUS = 'CHECK_STATUS';
 
 export const checkStatus = () => ({
   type: CHECK_STATUS,
 });
 
-export default function statusCheck(state = [], action) {
-  if (action.type === CHECK_STATUS) {
-    return 'Under Construction';
+export default function categoriesReducer(state = [], action) {
+  switch (action.type) {
+    case CHECK_STATUS:
+      return 'Under Construction';
+    default:
+      return state;
   }
-  return state;
 }

@@ -1,8 +1,7 @@
-/* eslint-disable no-undef */
-/* eslint-disable comma-dangle */
-
+/* eslint-disable no-unused-vars */
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { addBook } from '../redux/Books/Books';
 // import { bookReducers } from '';
 
 const BookActions = () => {
@@ -31,12 +30,12 @@ const BookActions = () => {
         onClick={(event) => {
           event.preventDefault();
           dispatch(
-            bookReducers({
-              id: Math.floor(Math.random() * 10000),
-              title,
+            addBook({
+              id: Math.floor(
+                Math.random() * Math.floor(Math.random() * Date.now())
+              ),
               author,
-              compleated: false,
-              chapter: 1,
+              title,
             })
           );
         }}
