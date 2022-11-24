@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/Books/ConfigureStore';
 import './App.css';
 import React from 'react';
 import Navbar from './component/Navbar';
-import Firstbook from './pages/Firstbook.js';
+import Firstbook from './pages/Firstbook';
 import Cats from './pages/Cats';
-import { Provider } from 'react-redux';
-import store from './redux/Books/ConfigureStore';
+
 function App() {
   return (
     <Provider store={store}>

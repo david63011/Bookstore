@@ -3,8 +3,7 @@ import { useSelector } from 'react-redux';
 import Books from '../component/BooksRender';
 import BookActions from '../component/BookActions';
 
-const Firstbook = () => {
-  return (
+const Firstbook = () => (
     <div className="book-container">
       {useSelector((state) => state.books).map((book) => (
         <Books
@@ -19,6 +18,5 @@ const Firstbook = () => {
       <BookActions />
     </div>
   );
-};
 
 export default Firstbook;

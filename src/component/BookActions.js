@@ -32,11 +32,11 @@ const BookActions = () => {
           dispatch(
             addBook({
               id: Math.floor(
-                Math.random() * Math.floor(Math.random() * Date.now())
+                Math.random() * Math.floor(Math.random() * Date.now()),
               ),
               author,
               title,
-            })
+            }),
           );
         }}
         className="bookbtn"
