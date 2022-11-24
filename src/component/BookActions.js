@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { addBook } from '../redux/Books/Books';
+import { addBook } from '../redux/books/books';
 
 const BookActions = () => {
   const [title, setTitle] = useState('');
@@ -30,11 +30,11 @@ const BookActions = () => {
           dispatch(
             addBook({
               id: Math.floor(
-                Math.random() * Math.floor(Math.random() * Date.now()),
+                Math.random() * Math.floor(Math.random() * Date.now())
               ),
               author,
               title,
-            }),
+            })
           );
         }}
         className="bookbtn"
