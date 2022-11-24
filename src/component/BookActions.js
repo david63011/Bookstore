@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { addBook } from '../redux/Books/Books';
-// import { bookReducers } from '';
 
 const BookActions = () => {
   const [title, setTitle] = useState('');

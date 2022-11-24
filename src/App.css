@@ -61,6 +61,26 @@ form input {
   cursor: pointer;
 }
 
+.stat-container{
+  display: flex;
+  
+  }
+  
+.cat-btn {
+  background-color: #0290ff;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .books {
   display: flex;
   flex-direction: column;

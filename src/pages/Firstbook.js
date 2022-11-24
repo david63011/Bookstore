@@ -5,14 +5,14 @@ import BookActions from '../component/BookActions';
 
 const Firstbook = () => (
     <div className="book-container">
-      {useSelector((state) => state.books).map((book) => (
+      {useSelector((state) => state.books).map((books) => (
         <Books
-          key={book.id}
-          id={book.id}
-          title={book.title}
-          author={book.author}
-          completed={book.completed}
-          chapter={book.chapter}
+          key={books.id}
+          id={books.id}
+          title={books.title}
+          author={books.author}
+          completed={books.completed}
+          chapter={books.chapter}
         />
       ))}
       <BookActions />
