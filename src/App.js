@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './redux/Books/ConfigureStore';
+import store from './redux/books/ConfigureStore';
 import './App.css';
 import React from 'react';
 import Navbar from './component/Navbar';

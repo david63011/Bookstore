@@ -1,9 +1,5 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 const ADD_BOOK = 'bookstore/src/redux/books/addBook';
 const REMOVE_BOOK = 'bookstore/src/redux/books/removeBook';
-const url =
-  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ArKXtCwBNhnzpRUo4IYg/books';
 
 export const defaultState = [
   {
