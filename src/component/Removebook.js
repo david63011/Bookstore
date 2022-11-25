@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook, fetchBooks } from '../redux/Books/Books';
+import { removeBook } from '../redux/books/books';
 
 const RemoveBooks = (id) => {
   const dispatch = useDispatch();
@@ -10,11 +11,8 @@ const RemoveBooks = (id) => {
     <button
       onClick={() => {
         dispatch(removeBook(id));
-        setTimeout(() => {
-          dispatch(fetchBooks());
-        }, 500);
       }}
-      className="book-btn"
+      className="book-btn remove"
       type="button"
     >
       Remove

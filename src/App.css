@@ -13,11 +13,16 @@
 }
 
 .navbar {
-  display: flex;
   align-items: stretch;
-  padding: 0 20px;
   background-color: #333;
   height: 60px;
+  top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  border-bottom: 1px solid #130886;
+  padding: 3rem 6rem;
 }
 
 .navbar a {
@@ -35,8 +40,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 20px;
 }
 
+.nabbar li {
+  font-size: 1.413rem;
+  font-weight: 400;
+}
+.navbar h1 {
+  font-size: 2.875rem;
+  font-weight: 900;
+  color: #0290ff;
+}
 .addbook {
   color: #888;
   font-size: 1.25rem;
@@ -59,6 +74,10 @@ form input {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.bookbtn:hover {
+  background-color: #4386bf;
 }
 
 .stat-container {
@@ -118,8 +137,20 @@ form input {
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;
+  box-shadow: 10px 10px 27px -159px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
 }
 
+.info {
+  display: flex;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #fff;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
 .genre {
   color: grey;
   font-size: 0.7rem;
@@ -138,6 +169,45 @@ form input {
   font-size: 0.8rem;
 }
 
-.progress {
+.left-section {
   display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.center-section {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5em;
+}
+
+.chapter {
+  margin-top: 1em;
+}
+
+.progress-btn {
+  background-color: #0290ff;
+  margin-top: 1em;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.progress-btn:hover {
+  background-color: #4386bf;
+}
+
+.remove:hover {
+  color: red;
 }
