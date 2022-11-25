@@ -13,7 +13,6 @@
 }
 
 .navbar {
-  align-items: stretch;
   background-color: #333;
   height: 60px;
   top: 30px;
@@ -47,11 +46,13 @@
   font-size: 1.413rem;
   font-weight: 400;
 }
+
 .navbar h1 {
   font-size: 2.875rem;
   font-weight: 900;
   color: #0290ff;
 }
+
 .addbook {
   color: #888;
   font-size: 1.25rem;
@@ -151,6 +152,7 @@ form input {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+
 .genre {
   color: grey;
   font-size: 0.7rem;
