@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RemoveBooks from './Removebook';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const Books = ({ id, title, author }) => (
   <div className="bookSite">
