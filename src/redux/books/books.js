@@ -1,72 +1,60 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
 const ADD_BOOK = 'bookstore/src/redux/books/addBook';
 const REMOVE_BOOK = 'bookstore/src/redux/books/removeBook';
-const GET_BOOKS = 'bookstore/src/redux/books/getBooks';
 
-export const defaultState = [];
+export const defaultState = [
+  {
+    id: '1',
+    title: 'Money Ball',
+    author: 'Michael Lewis',
+    completed: '32%',
+    chapter: '7',
+  },
+  {
+    id: '2',
+    title: 'Dune',
+    author: 'Frank Herbert',
+    completed: '8%',
+    chapter: '1',
+  },
+  {
+    id: '3',
+    title: 'The Crystal Castle',
+    author: 'David Underwood',
+    completed: '10%',
+    chapter: '3',
+  },
+];
 
-export const getBook = createAsyncThunk(GET_BOOKS, async () => {
-  const result = await fetch(
-    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/sppWoQdq6XBTog313fKt/books/',
-    {
-      method: 'GET',
-      headers: {
-        'Content-type': 'application/json',
-      },
-    }
-  );
-  const json = result.json();
-  return json;
+export const addBook = (payload) => ({
+  type: ADD_BOOK,
+  id: payload.id,
+  title: payload.title,
+  author: payload.author,
+  completed: payload.completed,
+  chapter: payload.chapter,
 });
 
-export const addBook = createAsyncThunk(ADD_BOOK, (payload) => {
-  fetch(
-    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/sppWoQdq6XBTog313fKt/books/',
-
-    {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify(payload),
-    }
-  );
-  return payload;
+export const removeBook = (payload) => ({
+  type: REMOVE_BOOK,
+  id: payload.id,
 });
 
-export const removeBook = createAsyncThunk(REMOVE_BOOK, (payload) => {
-  fetch(
-    `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/sppWoQdq6XBTog313fKt/books/${payload}`,
-    {
-      method: 'DELETE',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        item_id: payload,
-      }),
-    }
-  );
-  return payload;
-});
-
-const booksReducer = (state = defaultState, action) => {
-  const list = [];
+export default function bookReducer(state = defaultState, action) {
   switch (action.type) {
-    case `${ADD_BOOK}/fulfilled`:
-      return [...state, action.payload];
-    case `${REMOVE_BOOK}/fulfilled`:
-      return state.filter((book) => book.item_id !== action.payload);
-    case `${GET_BOOKS}/fulfilled`:
-      Object.keys(action.payload).forEach((element) => {
-        const book = action.payload[element][0];
-        book.item_id = element;
-        list.push(book);
-      });
-      return list;
+    case ADD_BOOK:
+      return [
+        ...state,
+        {
+          id: action.id,
+          title: action.title,
+          author: action.author,
+          completed: action.completed,
+          chapter: action.chapter,
+        },
+      ];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
-};
-
-export default booksReducer;
+}

@@ -11,6 +11,7 @@ const BookActions = () => {
     <form>
       <h2 className="addbook">ADD NEW BOOK</h2>
       <input
+        className="inputs"
         type="text"
         placeholder="Book Title"
         onChange={(event) => {
@@ -18,6 +19,7 @@ const BookActions = () => {
         }}
       />
       <input
+        className=".inputs"
         type="text"
         placeholder="Author"
         onChange={(event) => {

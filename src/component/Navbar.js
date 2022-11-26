@@ -1,23 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="navbar">
-    <h1>
-      <Link to="/">David's Bookstore</Link>
+    <h1 className="title">
+      <NavLink className="logo" to="/">
+        David's Bookstore
+      </NavLink>
     </h1>
     <ul className="nav-links">
       <li>
-        <Link to="/" className="nav-link">
+        <NavLink to="/" className="nav-link">
           Books
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/categories" className="nav-link">
+        <NavLink to="/categories" className="nav-link">
           Categories
-        </Link>
+        </NavLink>
       </li>
     </ul>
+    <div>
+      <FontAwesomeIcon icon={faUser} className="user-icon"></FontAwesomeIcon>;
+    </div>
   </nav>
 );
 
