@@ -19,7 +19,7 @@ const BookActions = () => {
         }}
       />
       <input
-        className=".inputs"
+        className="inputs"
         type="text"
         placeholder="Author"
         onChange={(event) => {
