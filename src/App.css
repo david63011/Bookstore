@@ -186,13 +186,6 @@ form input {
   margin: 1rem;
 }
 
-.center-section {
-  display: flex;
-  margin: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
 .right-section {
   display: flex;
   flex-direction: column;
@@ -245,10 +238,6 @@ form input {
 
 .current {
   color: darkgrey;
-  font-size: 18px;
-}
-
-.chapter {
   font-size: 18px;
 }
 
