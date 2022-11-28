@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-link {
+  color: #121212 !important;
+  font-size: 1.413rem;
+  font-weight: 400;
+  letter-spacing: 1.9px;
+}
+
+.body {
+  margin: 0;
+}
+
+.logo {
+  color: #0290ff !important;
+  font-size: 40px;
+}
+
+.navbar {
+  height: 60px;
+  top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  padding: 3rem 6rem;
+  border: 1px solid whitesmoke;
+  background-color: #f8f8f8;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar li {
+  font-size: 1.413rem;
+  font-weight: 400;
+  color: darkgray;
+}
+
+.addbook {
+  color: #888;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+form input {
+  box-shadow: 10px 10px 27px -159px rgba(0, 0, 0, 0.75);
+  margin: 1rem;
+  padding: 0.7rem;
+}
+
+.bookbtn {
+  background-color: #0290ff;
+  width: 13.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 3.7rem;
+}
+
+.bookbtn:hover {
+  background-color: #4386bf;
+}
+
+.stat-container {
+  display: flex;
+}
+
+.cat-btn {
+  background-color: #0290ff;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  margin-left: -16px;
+}
+
+.cats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbtn {
+  background-color: #0290ff;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+
+.book-btn {
+  color: #4386bf;
+  margin: 1rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.book-info {
+  border: 1px solid rgb(197, 186, 186);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  box-shadow: 10px 10px 27px -159px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #fff;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.genre {
+  color: grey;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.booktitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.bookauthor {
+  color: #4386bf;
+  font-size: 0.8rem;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5em;
+}
+
+.chapter {
+  margin-top: 1em;
+}
+
+.progress-btn {
+  background-color: #0290ff;
+  margin-top: 1em;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.progress-btn:hover {
+  background-color: #4386bf;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.center-section {
+  padding: 0 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.oval {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #0290ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current {
+  color: darkgrey;
+  font-size: 18px;
+}
+
+.update-btn {
+  background-color: #0290ff;
+  margin-top: 1em;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+}
+
+.bookform {
+  border: 1px solid whitesmoke;
+  width: 91.3%;
+  padding: 1%;
+  margin-left: 5px;
+  margin-top: 25px;
+  margin-bottom: 190px;
+}
+
+.inputs {
+  width: 500px;
+}
+
+.user-icon {
+  display: flex;
+  margin-left: 36rem;
+  margin-top: 1.5rem;
+  color: #0290ff;
+}
+
+.remove:hover {
+  color: red;
+}
