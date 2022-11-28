@@ -271,3 +271,7 @@ form input {
   margin-top: 1.5rem;
   color: #0290ff;
 }
+
+.remove:hover {
+  color: red;
+}

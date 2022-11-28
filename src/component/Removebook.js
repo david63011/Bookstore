@@ -11,7 +11,7 @@ const RemoveBooks = (id) => {
       onClick={() => {
         dispatch(removeBook(id));
       }}
-      className="book-btn"
+      className="book-btn remove"
       type="button"
     >
       Remove
